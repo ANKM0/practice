@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>7章演習</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="main-visual">
+      <h1 class="headline">サービス紹介</h1>
+    </section>
+    <main>
+      <section class="service1">
+        <h2><img src="img/wc-logo.png" alt="ロゴ" /></h2>
+        <p>
+          マンツーマンサポートによる学習で、<br />確実にWebスキルを習得できるプログラミングスクールです。
+        </p>
+        <a href="https://web-camp.io/">webサイト</a>
+      </section>
+
+      <section class="service2">
+        <h2><img src="img/wcp-logo.png" alt="ロゴ" /></h2>
+        <p>
+          未経験から転職を保証する<br />日本で唯一のプログラミングスクールです。
+        </p>
+        <a href="http://web-camp.io/pro/">webサイト</a>
+      </section>
+
+      <section class="service3">
+        <h2><img src="img/wcw-logo.png" alt="ロゴ" /></h2>
+        <p>
+          家庭も仕事も頑張りたい主婦・ママ向けの、<br />1ヶ月でWebサイトを制作するWebデザインスクールです。
+        </p>
+        <a href="http://web-camp.io/woman/">webサイト</a>
+      </section>
+
+      <section class="service4">
+        <h2><img src="img/wcc-logo.png" alt="ロゴ" /></h2>
+        <p>
+          3000名のエンジニアをサポートしてきたエージェントが<br />あなたの転職をサポート。
+        </p>
+        <a href="http://web-camp.io/career/">webサイト</a>
+      </section>
+    </main>
+  </body>
+</html>
+
+<1>
+  2. Service1,2について、ともに要素内の空白を作成するpaddingプロパティを追加
+  border-bottomがあるから内側に空白->padding
+
+  <2>
+  3. オレンジの部分の内部に緑・黄緑の部分の要素を置いてしまった
+  footerで隔離すべき
+  4. 緑の部分の内部に黄緑の要素の内部が存在している
+  横並びにするには兄弟要素にする必要がある
+
+  <3-1>
+  2. Contents-boxクラスのCSSにdisplay:inline-block;がついてしまっているため
+  ->block
+
+  正解
+  要素のContents-Box親要素にdisplay:flexがついてしまっているため
+
+  <3-2>
+  1. 中央揃えにしたいのでcontent-boxクラス要素の親クラスにdisplay:flexを追加する必要がある
+  content-boxクラス要素の親クラス...main
+  display: block;と競合する
+
+  2. 要素全体を中央揃えにしたいのでmainタグにmargin: 0 auto 20px; を追加する
+  ->mainとheaderの隙間がなくなる
+
+  ＝＞3. 各要素を中央揃えにしたいのでcontent-boxクラスにmargin: 0 auto 20px; を追加する
+
+  <4-1>
+  1. item-listクラスに text-align: center;が記載されてしまっている
+  ->left
+  3. リスト1の部分にだけ全角スペースが入っている
+  ->消す
+  4. 全体に中央揃え用のmarginがかかっておらず、代わりにtext-align: center;がかかってしまっている
+  ->  margin: 50px auto;に　  text-align: center;を消す
+
+  5. mainタグではなくbox-listにかける
+
+  <4-2>
+  ??2. marginを含めたboxクラスのサイズが100%を超えてしまっているため、3つ目以降のboxで折り返されるようになっている
+
+
+
+
+  お疲れ様です
+  10/3 13:00-15:00に研修を受ける予定の青山です
+
+  研修用のzoomのurlが届いていないのですが
+  お送り頂いているでしょうか
+
+  もしよろしければお手数をおかけしますが
+  もう一度お送り頂けると幸いです
+
+  よろしくお願いします
